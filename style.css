@@ -1,0 +1,263 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+main > .about-me{
+    background-image: url("./pictures/fundo.jpg");
+}
+
+main > .hard-skills{
+    background-image: url("./pictures/fundo2.jpg");
+}
+
+@media only screen and (max-width: 600px){
+    header > .cabecalho{
+        background: rgb(80, 72, 80);
+        padding: 4vh;
+    }
+    
+    #nome{
+        text-decoration: none;
+        color: white;
+        font-size: 15px;
+    } 
+
+    
+    header > .cabecalho > div > .nav-bar{
+        list-style-type: none;
+        display: none;
+        float: right;
+    }
+
+    main > .about-me{
+        height: 750px;
+        background-attachment: fixed;
+    }   
+
+    main > div > #eu{
+        width: 300px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        height: 250px;
+        clip-path: circle(100px at center);
+    }
+
+    main > .about-me > div > h2{
+        margin-left: 21vh;
+        margin-right: 10vh;
+        color: white;
+    }
+
+    main > .about-me > div > .descricao{
+        text-align: right;
+        color: white;
+        padding: 10vh;
+        text-align: justify;
+    }
+
+    main > .hard-skills{
+        width: 100%;
+        height: 650px;
+        background-attachment: fixed;
+    }
+
+    main > .hard-skills > .title-abilidades{
+        text-align: center;
+        color: white;
+        padding: 30px;
+    }
+
+    main > .hard-skills > .abilidades{
+        color:white;
+        text-align: center;
+        list-style-type: none;
+        padding: 2vh;
+    }
+
+    main > .hard-skills > .abilidades > li > img{
+        width: 40px;
+    }
+
+    main > .hard-skills > .abilidades > li > p{
+        padding: 2vh;
+    }
+
+    
+    main > .contatos{
+        background-color: rgb(80, 72, 80);
+        width:100%;
+        height: 230px;
+        padding-top: 3vh;
+    }
+
+    main > .contatos > ul > li > a > img{
+        width:50px;  
+    }
+
+    main > .contatos > h2{
+        text-align: center;
+        color: white;
+    }
+
+    main > .contatos > .redes-sociais{
+        display: inline-flex;
+        list-style-type: none;
+    }
+
+    main > .contatos >.redes-sociais > li {
+        margin-top: 40px;
+        margin-left: 5px;
+        padding: 10px;
+    }
+
+    footer > div{
+        background-color: black;
+    }
+
+    footer > div > p{
+        text-align: center;
+        color: white;
+        font-size: 12px;
+    }
+}
+
+@media only screen and (min-width: 600px){
+
+}
+
+@media only screen and (min-width: 600px){
+    header > .cabecalho{
+        background: rgb(80, 72, 80);
+        padding: 4vh;
+    }
+    
+    #nome{
+        text-decoration: none;
+        color: white;
+        font-size: 15px;
+    }
+
+    header > .cabecalho > div > .nav-bar{
+        list-style-type: none;
+        display: inline-flex;
+        float: right;
+    }
+
+    header > .cabecalho > div > .nav-bar > .itens{
+        margin-right: 3vh;
+        color: white;
+        display: block;
+    }
+
+    header > .cabecalho > div > .nav-bar > .itens > a {
+        text-decoration: none;
+        color:white;
+    }
+
+    main > .about-me{
+        height: 750px;
+    }
+
+    main > .about-me > div{
+        float: right;   
+    }
+
+    main > div > #eu{
+        width: 300px;
+        height: 250px;
+        clip-path: circle(100px at center);
+    }
+
+    main > .about-me {
+        display: inline-flex;
+        width: 100%;
+        height: 100vh;
+        margin-bottom: 0;
+        background-attachment: fixed;
+    }
+
+    main > .about-me > div > h2{
+        margin-left: 40%;
+        margin-right:40%;
+        text-align: justify;
+        color: white;
+    }
+
+    main > .about-me > div > .descricao{
+        text-align: right;
+        color: white;
+        padding: 10vh;
+    }
+
+    main > .hard-skills{
+        width: 100%;
+        height: 750px;
+        background-attachment: fixed;
+    }
+
+    main > .hard-skills > .title-abilidades{
+        text-align: center;
+        color: white;
+        padding: 30px;
+    }
+
+    main > .hard-skills > .abilidades{
+        color:white;
+        text-align: center;
+        list-style-type: none;
+        padding: 2vh;
+    }
+
+    main > .hard-skills > .abilidades > li > img{
+        width: 40px;
+    }
+
+    main > .hard-skills > .abilidades > li{
+        padding: 2vh;
+    }
+
+    main > .hard-skills > .abilidades > li > p{
+        padding: 2vh;
+    }
+  
+    main > .contatos{
+        background-color: rgb(80, 72, 80);
+        width:100%;
+        height: 280px;
+        padding: 4vh;
+    }
+
+    main > .contatos > ul > li > a > img{
+        width:50px;  
+    }
+
+    main > .contatos > h2{
+        text-align: center;
+        color: white;
+    }
+
+    main > .contatos > .redes-sociais{
+        display: flex;
+        margin-left: 15%;
+        margin-right: 15%;
+        list-style-type: none;
+    }
+
+    main > .contatos >.redes-sociais > li {
+        padding: 8%;
+    }
+
+    footer > div{
+        background-color: black;
+    }
+
+    footer > div > p{
+        text-align: center;
+        color: white;
+        font-size: 12px;
+    }
+}
