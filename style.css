@@ -14,6 +14,10 @@ main > .hard-skills{
 }
 
 @media only screen and (max-width: 600px){
+    body{
+        overflow-x: hidden;
+    }
+    
     header > .cabecalho{
         background: rgb(80, 72, 80);
         padding: 4vh;
@@ -25,11 +29,43 @@ main > .hard-skills{
         font-size: 15px;
     } 
 
+    header > .cabecalho > div > .burguer{
+        float: right;
+        cursor: pointer;
+        display: block;
+    }
+
+    header > .cabecalho > div > .burguer > div{
+        width: 25px;
+        height: 4px;
+        background-color: white;
+        margin: 5px;
+    }
     
     header > .cabecalho > div > .nav-bar{
         list-style-type: none;
-        display: none;
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        background: rgb(80, 72, 80);
+        align-items: center;
+        width: 70%;
+        height: 90vh;
+        right: 0px;
+        top: 10vh;
         float: right;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-out;
+        z-index: 1500;
+    }
+
+    header > .cabecalho > div > .nav-bar > .itens{
+        padding: 8vh;
+    }
+
+    header > .cabecalho > div > .nav-bar > .itens > a{
+        text-decoration: none;
+        color: white;
     }
 
     main > .about-me{
@@ -90,8 +126,7 @@ main > .hard-skills{
     main > .contatos{
         background-color: rgb(80, 72, 80);
         width:100%;
-        height: 230px;
-        padding-top: 3vh;
+        height: 25vh;
     }
 
     main > .contatos > ul > li > a > img{
@@ -104,18 +139,19 @@ main > .hard-skills{
     }
 
     main > .contatos > .redes-sociais{
-        display: inline-flex;
         list-style-type: none;
+        align-content: center;
     }
 
     main > .contatos >.redes-sociais > li {
-        margin-top: 40px;
-        margin-left: 5px;
-        padding: 10px;
+        display: inline-block;
+        margin: 0 0.5vh;
+        padding: 5%;
     }
 
     footer > div{
         background-color: black;
+        bottom: 0;
     }
 
     footer > div > p{
@@ -125,16 +161,20 @@ main > .hard-skills{
     }
 }
 
-@media only screen and (min-width: 600px){
-
+.nav-bar-active{
+    transform: translateX(0%);
 }
 
 @media only screen and (min-width: 600px){
+    header > .cabecalho > div > .burguer{
+        display: none;
+    }
+
     header > .cabecalho{
         background: rgb(80, 72, 80);
         padding: 4vh;
     }
-    
+
     #nome{
         text-decoration: none;
         color: white;
@@ -195,7 +235,7 @@ main > .hard-skills{
 
     main > .hard-skills{
         width: 100%;
-        height: 750px;
+        height: 90vh;
         background-attachment: fixed;
     }
 
@@ -227,8 +267,9 @@ main > .hard-skills{
     main > .contatos{
         background-color: rgb(80, 72, 80);
         width:100%;
-        height: 280px;
+        height: 35vh;
         padding: 4vh;
+        overflow: hidden;
     }
 
     main > .contatos > ul > li > a > img{
@@ -241,18 +282,20 @@ main > .hard-skills{
     }
 
     main > .contatos > .redes-sociais{
-        display: flex;
-        margin-left: 15%;
-        margin-right: 15%;
+        margin:auto;
         list-style-type: none;
     }
 
     main > .contatos >.redes-sociais > li {
-        padding: 8%;
+        padding: 7%;
+        padding-bottom: 0;
+        display: inline-block;
     }
-
+    
     footer > div{
         background-color: black;
+        height: 2vh;
+        bottom: 0px;
     }
 
     footer > div > p{

@@ -14,19 +14,27 @@
             <div>
                 <a href="#" id="nome">Leonardo H. (Em construção!)</a>
 
+                <div class="burguer" onclick="navSlide()">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+                </div>
+
                 <ul class="nav-bar">
-                    <li class ="itens"><a href="#">Contato</a></li>
+                    <li class ="itens"><a href="#contatos">Contato</a></li>
                     <li class ="itens"><a href="#">Experiência</a></li>
-                    <li class ="itens"><a href="#">Hard Skills</a></li>
-                    <li class ="itens"><a href="#">Soft Skills</a></li>
-                    <li class ="itens"><a href="#">About me</a></li>
+                    <li class ="itens"><a href="#hard-skills">Hard Skills</a></li>
+                    <li class ="itens"><a href="#soft">Soft Skills</a></li>
+                    <li class ="itens"><a href="#about-me">About me</a></li>
                 </ul>
             </div>
         </nav>
     </header>
+
+    <script src="script.js"></script>
     
     <main>
-        <div class="about-me">
+        <div class="about-me" id="about-me">
             <img src="./pictures/eu.jpg" id ="eu">
             <div>
                 <h2>About me</h2>
@@ -65,7 +73,7 @@
         <div class="experiencia"></div>
         <div class="soft-skills"></div>
 
-        <div class="contatos">
+        <div class="contatos" id="contatos">
             <h2>Contatos</h2>
             <ul class="redes-sociais">
                 <li>
