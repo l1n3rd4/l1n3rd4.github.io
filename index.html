@@ -1,103 +1,251 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <title>Leo - dev</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" type= "text/css" href="style.css">
-    <link rel="icon" href="pictures/icon.png">
-    <title>Leo - dev</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/compiler/bootstrap.css">
+    <link rel="stylesheet" href="node_modules/bootstrap/compiler/style.css">
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.css">
 </head>
 <body>
-    <header>
-        <nav class= "cabecalho">      
-            <div>
-                <a href="#" id="nome">Leonardo H. (Em construção!)</a>
+    <nav class="navbar navbar-expand-lg navbar-light bg-warning">
+        <div class="container">
+            <a href="#" class="navbar-brand h1 mb-0">Leonardo</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-site">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbar-site">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Início</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Contato</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Experiência</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Hard Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Soft Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">About me</a>
+                    </li>
+                </ul>           
+                
+                <form action="" class="form-inline">
+                    <input type="search" class="form-control mr-2" placeholder="Buscar...">
+                    <button class="btn btn-warning" type="submit">Ok</button>
+                </form>
+            </div>
+        </div>
+    </nav>
 
-                <div class="burguer" onclick="navSlide()">
-                    <div class="line1"></div>
-                    <div class="line2"></div>
-                    <div class="line3"></div>
+    <div id="carouselSite" class= "carousel  slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#carouselSite" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselSite" data-slide-to="1" class=""></li>
+            <li data-target="#carouselSite" data-slide-to="2" class=""></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="./pictures/image1.jpg" alt="" class="img-fluid d-block">
+                <div class="carousel-caption d-none d-md-block">
+                    <h3></h3>
+                    <p></p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="./pictures/image2.jpg" alt="" class="img-fluid d-block">
+                <div class="carousel-caption d-none d-md-block">
+                    <h3></h3>
+                    <p></p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="./pictures/image3.jpg" alt="" class="img-fluid d-block">
+                <div class="carousel-caption d-none d-md-block">
+                    <h3></h3>
+                    <p></p>
+                </div>
+            </div>
+        </div>
+
+        <a href="#carouselSite" class="carousel-control-prev" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+            <span class="sr-only">Anterior</span>
+        </a>
+        <a href="#carouselSite" class="carousel-control-next" role="button" data-slide="next">
+            <span class="carousel-control-next-icon"></span>
+            <span class="sr-only">Próximo</span>
+        </a>
+    </div>
+
+    <div class="row justify-content-sm-center">
+
+        <div class="col-sm-6 col-md-4">
+            <div class="card m-3">
+                <img src="./pictures/hotel.jpg" alt="" class="card-img-top figure-img mx-auto">
+                <div class="card-body">
+                    <h4 class="card-title">Hotel Descanso Garantido</h4>
+                    <h6 class="class-subtitle mb-2 text-muted">Projeto desenvolvido para conclusão de aeds 1</h6>
+                    <p class="card-text"></p>
+                    <a href="#" class="card-link">Saiba mais...</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-sm-6 col-md-4">
+            <div class="card m-3">
+                <img src="./pictures/website.jpg" alt="" class="card-img-top figure-img">
+                <div class="card-body">
+                    <h4 class="card-title">l1n3rd4.github.io</h4>
+                    <h6 class="class-subtitle mb-2 text-muted">Site Pessoal</h6>
+                    <p class="card-text"></p>
+                    <a href="#" class="card-link">Saiba mais..</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-sm-6 col-md-4">
+            <div class="card m-3">
+                <img src="./pictures/cars.jpg" alt="" class="card-img-top figure-img">
+                <div class="card-body">
+                    <h4 class="card-title">Loja de automóveis</h4>
+                    <h6 class="class-subtitle mb-2 text-muted">Projeto em java</h6>
+                    <p class="card-text"></p>
+                    <a href="#" class="card-link">Saiba mais...</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-12 text-center my-5">
+                <h1 class="display-4">
+                    Deseja me enviar uma mensagem?
+                </h1>
+            </div>
+        </div>
+
+        <div class="row mb-5">
+            <div class="col-sm-12 col-lg-12">
+                <form action="">
+                    <div class="form-row">
+                        <div class="form-group col-sm-6">
+                            <label for="inputNome">Nome</label>
+                            <input type="text" class="form-control" id="inputNome" placeholder= "Nome">
+                        </div>
+
+                        <div class="form-group col-sm-6">
+                            <label for="inputSobrenome">Sobrenome</label>
+                            <input type="text" class="form-control" id="inputSobrenome" placeholder= "Sobrenome">
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group col-sm-12">
+                            <label for="inputEmail">Email</label>
+                            <input type="text" class="form-control" id="inputEmail" placeholder="harry@gmail.com">
+                            <small id="emailHelp" class="form-text text-muted">Nunca vamos compartilhar seu email.</small>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group col-sm-12">
+                            <label for="inputText">Texto</label>
+                            <textarea class="form-control" id="inputTextarea" rows=""></textarea>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="col-sm-12">
+                            <button type="submit" class="btn btn-primary">Enviar</button>
+                            <a tabindex="0" role="button"  data-toggle="popover" data-placement="right" class="btn btn-secundary ml-2" data-trigger="focus" title="Resposta" data-content="Tempo de resposta demora até 12 hs">
+                                Ajuda
+                            </a>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="">
+        <div class="row bg-light col-lg-12">
+            <div class="col-12"><hr></div>
+            <div class="col-sm-4">
+                <h3 class="text-center">Contribuições:</h3>
+                <p></p>
+            </div>
+
+            <div class="col-sm-4">
+                <div class="list-group">
+                    <h3 class="text-center">Ir para:</h3>
+                    <a href="" class="list-group-item list-group-item-action list-group-item-primary">Perfil</a>
+                    <a href="" class="list-group-item list-group-item-action">Serviços</a>
+                    <a href="" class="list-group-item list-group-item-action">Contato</a>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <h3 class="text-center">Social</h3>
+                <div class="btn-group-vertical group btn-block" role="group">
+                    <a href="" class="btn">Facebook</a>
+                    <a href="" class="btn">Linkedin</a>
+                    <a href="" class="btn">Instagram</a>
+                    <a href="" class="btn">Spotify</a>
+                    <a href="" class="btn">Telegram</a>
+                    <a href="" class="btn">Whatsapp</a>
+                </div>
+            </div>
+
+            <div class="col-12 mt-5">
+                <blockquote class="blockquote text-center">
+                    <p class="mb-0">Hello</p>
+                    <footer class="blockquote-footer">Author
+                        <cite title="Source Title">Alfredo</cite>
+                    </footer>
+                </blockquote>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="siteModal" tabindex="-1">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title"></h5>
+                    <button class="close" type="button" data-dismiss="modal">
+                        <span>&times;</span>
+                    </button>
                 </div>
 
-                <ul class="nav-bar">
-                    <li class ="itens"><a href="#contatos">Contato</a></li>
-                    <li class ="itens"><a href="#">Experiência</a></li>
-                    <li class ="itens"><a href="#hard-skills">Hard Skills</a></li>
-                    <li class ="itens"><a href="#soft">Soft Skills</a></li>
-                    <li class ="itens"><a href="#about-me">About me</a></li>
-                </ul>
-            </div>
-        </nav>
-    </header>
+                <div class="modal-body">
+                    <p>Kole camarada</p>
+                </div>
 
-    <script src="script.js"></script>
-    
-    <main>
-        <div class="about-me" id="about-me">
-            <img src="./pictures/eu.jpg" id ="eu">
-            <div>
-                <h2>About me</h2>
-                <p class="descricao">Sou um graduando em Engenharia de software, apaixonado por tecnologia
-                    e disposto a aprender.
-                </p>
+                <div class="modal-footer">
+                    <button class="btn btn-danger" type="button" data-dismiss="modal">
+                        Sair
+                    </button>
+                </div>
             </div>
         </div>
+    </div>
 
-        <div class="hard-skills">
-            <h2 class = "title-abilidades">Hard Skills</h2>
-                <ul class="abilidades">
-                    <li>
-                        <img src="./pictures/javascript.png" alt="" id="javascript">
-                        <p>javascript(básico)</p>  
-                    </li>
-                    <li>
-                        <img src="./pictures/html.png" alt="" id="html5">
-                        <p>html5</p>
-                    </li>
-                    <li>
-                        <img src="./pictures/css.png" alt="" id="css3">
-                        <p>CSS3</p>
-                    </li>
-                    <li>
-                        <img src="./pictures/c.png" alt="" id="c">
-                        <p>C</p>
-                    </li>
-                    <li>
-                        <img src="./pictures/c++.png" alt="" id="c++">
-                        <p>C++</p>
-                    </li>                 
-                </ul>
-        </div>
-
-        <div class="experiencia"></div>
-        <div class="soft-skills"></div>
-
-        <div class="contatos" id="contatos">
-            <h2>Contatos</h2>
-            <ul class="redes-sociais">
-                <li>
-                    <a href="https://github.com/l1n3rd4" target="_blank"><img src="./pictures/github.png" id="github"></a> 
-                </li>
-                <li>
-                    <a href="https://www.facebook.com/leonardo.guimaraes.547" target="_blank"><img src="./pictures/facebook.png" id="facebook"></a> 
-                </li>
-                <li>
-                    <a href="https://www.instagram.com/leonardohg77/" target="_blank"><img src="./pictures/instagram.png" alt=""></a>
-                </li>
-                <li>
-                    <a href="https://www.linkedin.com/in/leonardo-henrique-bb1247119" target="_blank"><img src="./pictures/linkedin.png" alt=""></a>
-                </li>
-                <li>
-                    <a href="" target="_blank"><img src="./pictures/whatsapp.png" alt=""></a>
-                </li>
-            </ul>
-        </div>
-    </main>
-    <footer>
-        <div>
-            <p>© Copyright - 2019 - Leonardo Henrique Guimarães -  All Rights Reserved </p>
-        </div>
-    </footer>
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
+    <script>
+        $(function(){
+            $('[data-toggle="popover"]').popover()
+        })
+    </script>
 </body>
 </html>
